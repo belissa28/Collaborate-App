@@ -43,7 +43,7 @@ struct ContentView: View {
                 //NavigationLink(destination: ContentCreatorView()){
                 
 //                NavigationLink(destination: ContentCreatorView()) {
-                    TextField("Enter your name", text: $userName)                    //Text("Content Creator")
+                    TextField("Enter your name...", text: $userName)                    //Text("Content Creator")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.white)
@@ -54,7 +54,7 @@ struct ContentView: View {
             
                 
             //NavigationLink(destination: BusinessOwnerView()){
-                    TextField("Password", text: $password)
+                    TextField("Password...", text: $password)
                   
                     .padding()
                     .frame(maxWidth: .infinity)
@@ -81,12 +81,15 @@ struct ContentView: View {
 
             HStack{
                 Text("Don't have an account yet?").foregroundColor(.white)
-                Text("Sign up").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
-                    isTapped.toggle()
-                    print("Log in tapped")
-                }
+                NavigationLink(destination: SignUp()){
+                Text("Sign up")
+                    .underline()
+                    .foregroundColor(isTapped ? .gray : .white)
+                    //print("Log in tapped")
+                //}
+        
             }
-            .padding()
+            }        .padding()
           
         }
             
