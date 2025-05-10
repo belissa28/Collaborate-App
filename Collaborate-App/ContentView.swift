@@ -13,6 +13,7 @@ struct ContentView: View {
     //@State private var businessowner: String = ""
     
     var body: some View {
+        NavigationView{
         ZStack {
             LinearGradient(
                             gradient: Gradient(colors: [.purple, .blue]),
@@ -37,30 +38,35 @@ struct ContentView: View {
                 .foregroundColor(.white) // Optional: change text color for contrast
                 //.padding()
             Text("I am a...").foregroundColor(.white)
-            VStack(spacing: 16) {
-                Button("Content Creator") {
-                    print("Content Creator tapped")
+                //NavigationView{
+                VStack(spacing: 16) {
+                //NavigationLink(destination: ContentCreatorView()){
+                
+                NavigationLink(destination: ContentCreatorView()) {
+                    Text("Content Creator")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
                 }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.white)
-                .foregroundColor(.black)
-                .cornerRadius(10)
-
-                Button("Business Owner") {
-                    print("Business Owner tapped")
-                }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.white)
-                .foregroundColor(.black)
-                .cornerRadius(10)
-            }
-            .padding(.horizontal, 30)//            TextField("Content Creator", text: $contentcreator)
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
-//            TextField("Business Owner", text: $businessowner)
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
+                
             
+                
+            NavigationLink(destination: BusinessOwnerView()){
+                Text("Business Owner")
+                  
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.white)
+                    .foregroundColor(.black)
+                    .cornerRadius(10)
+            
+            }
+                }
+                          
+            .padding(.horizontal, 30)
+                
             HStack{
                 Text("Already have an account?").foregroundColor(.white)
                 Text("Log in").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
@@ -80,4 +86,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }
