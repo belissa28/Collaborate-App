@@ -31,7 +31,7 @@ struct SignUp: View {
                 .bold()
                 .padding()
             //Spacer().frame(height: 5)
-            Text("Log in")
+            //Text("Log in")
                 
                 //.font(.headline)
                 .font(.system(size:25))
@@ -42,7 +42,7 @@ struct SignUp: View {
                 VStack(spacing: 16) {
                 //NavigationLink(destination: ContentCreatorView()){
                 
-                NavigationLink(destination: ContentCreatorView()) {
+                NavigationLink(destination: CreatorSignUp()) {
                     Text("Content Creator")
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -53,7 +53,7 @@ struct SignUp: View {
                 
             
                 
-            NavigationLink(destination: BusinessOwnerView()){
+            NavigationLink(destination: BusinessOwnerSignUp()){
                 Text("Business Owner")
                   
                     .padding()
@@ -67,14 +67,14 @@ struct SignUp: View {
                           
             .padding(.horizontal, 30)
                 
-            HStack{
-                Text("Don't have an account yet?").foregroundColor(.white)
-                Text("Sign up").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
-                    isTapped.toggle()
-                    print("Log in tapped")
-                }
-            }
-            .padding()
+//            HStack{
+//                Text("Don't have an account yet?").foregroundColor(.white)
+//                Text("Sign up").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
+//                    isTapped.toggle()
+//                    print("Log in tapped")
+//                }
+//            }
+//            .padding()
           
         }
             

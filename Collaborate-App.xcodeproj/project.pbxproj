@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401B59BA2DCFF345000D2D94 /* CreatorSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B59B92DCFF345000D2D94 /* CreatorSignUp.swift */; };
+		401B59BC2DCFF5BB000D2D94 /* BusinessOwnerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B59BB2DCFF5BB000D2D94 /* BusinessOwnerSignUp.swift */; };
 		409603982DCE900500E454A6 /* Collaborate_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409603972DCE900500E454A6 /* Collaborate_AppApp.swift */; };
 		4096039A2DCE900500E454A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409603992DCE900500E454A6 /* ContentView.swift */; };
 		4096039C2DCE900900E454A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4096039B2DCE900900E454A6 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401B59B92DCFF345000D2D94 /* CreatorSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorSignUp.swift; sourceTree = "<group>"; };
+		401B59BB2DCFF5BB000D2D94 /* BusinessOwnerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessOwnerSignUp.swift; sourceTree = "<group>"; };
 		409603942DCE900500E454A6 /* Collaborate-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collaborate-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		409603972DCE900500E454A6 /* Collaborate_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collaborate_AppApp.swift; sourceTree = "<group>"; };
 		409603992DCE900500E454A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				409603972DCE900500E454A6 /* Collaborate_AppApp.swift */,
 				409603992DCE900500E454A6 /* ContentView.swift */,
 				409603AD2DCF19FE00E454A6 /* SignUp.swift */,
+				401B59B92DCFF345000D2D94 /* CreatorSignUp.swift */,
+				401B59BB2DCFF5BB000D2D94 /* BusinessOwnerSignUp.swift */,
 				409603A92DCF0F6C00E454A6 /* ContentCreatorView.swift */,
 				409603AB2DCF13FA00E454A6 /* BusinessOwnerView.swift */,
 				4096039B2DCE900900E454A6 /* Assets.xcassets */,
@@ -136,8 +142,10 @@
 			files = (
 				409603AC2DCF13FA00E454A6 /* BusinessOwnerView.swift in Sources */,
 				4096039A2DCE900500E454A6 /* ContentView.swift in Sources */,
+				401B59BA2DCFF345000D2D94 /* CreatorSignUp.swift in Sources */,
 				409603982DCE900500E454A6 /* Collaborate_AppApp.swift in Sources */,
 				409603AA2DCF0F6C00E454A6 /* ContentCreatorView.swift in Sources */,
+				401B59BC2DCFF5BB000D2D94 /* BusinessOwnerSignUp.swift in Sources */,
 				409603AE2DCF19FE00E454A6 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
