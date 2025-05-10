@@ -31,7 +31,7 @@ struct ContentView: View {
                 .bold()
                 .padding()
             //Spacer().frame(height: 5)
-            Text("Log in")
+            
                 
                 //.font(.headline)
                 .font(.system(size:25))
@@ -67,6 +67,18 @@ struct ContentView: View {
                           
             .padding(.horizontal, 30)
                 
+                Button(action: {
+                    print("Log in tapped")
+                }) {
+                    Text("Log in")
+                        .font(.system(size: 14)) // smaller font
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 12)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                }
+
             HStack{
                 Text("Don't have an account yet?").foregroundColor(.white)
                 Text("Sign up").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
