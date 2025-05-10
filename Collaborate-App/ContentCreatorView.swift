@@ -16,7 +16,7 @@ struct ContentCreatorView: View {
                 .font(.title)
                 .padding()
             }
-                .navigationTitle("Content Creator")
+                //.navigationTitle("Content Creator")
     }
     
     

@@ -18,7 +18,7 @@ struct BusinessOwnerView: View {
                 .font(.title)
                 .padding()
             }
-                .navigationTitle("Business Owner")
+                //.navigationTitle("Business Owner")
     }
     
     
