@@ -1,16 +1,16 @@
 //
-//  ContentView.swift
+//  SignUp.swift
 //  Collaborate-App
 //
-//  Created by Belissa on 5/9/25.
+//  Created by Belissa on 5/10/25.
 //
 
+import Foundation
 import SwiftUI
-
-struct ContentView: View {
+struct SignUp: View {
     @State private var isTapped = false
-    @State private var userName: String = ""
-    @State private var password: String = ""
+    //@State private var contentcreator: String = ""
+    //@State private var businessowner: String = ""
     
     var body: some View {
         NavigationView{
@@ -37,24 +37,24 @@ struct ContentView: View {
                 .font(.system(size:25))
                 .foregroundColor(.white) // Optional: change text color for contrast
                 //.padding()
-            //Text("I am a...").foregroundColor(.white)
+            Text("I am a...").foregroundColor(.white)
                 //NavigationView{
                 VStack(spacing: 16) {
                 //NavigationLink(destination: ContentCreatorView()){
                 
-//                NavigationLink(destination: ContentCreatorView()) {
-                    TextField("Enter your name", text: $userName)                    //Text("Content Creator")
+                NavigationLink(destination: ContentCreatorView()) {
+                    Text("Content Creator")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.white)
                         .foregroundColor(.black)
                         .cornerRadius(10)
-                //}
+                }
                 
             
                 
-            //NavigationLink(destination: BusinessOwnerView()){
-                    TextField("Password", text: $password)
+            NavigationLink(destination: BusinessOwnerView()){
+                Text("Business Owner")
                   
                     .padding()
                     .frame(maxWidth: .infinity)
@@ -62,7 +62,7 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
             
-            //}
+            }
                 }
                           
             .padding(.horizontal, 30)
@@ -82,9 +82,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SignUp_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignUp()
     }
 }
 }

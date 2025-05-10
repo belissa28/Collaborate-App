@@ -12,6 +12,7 @@
 		4096039C2DCE900900E454A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4096039B2DCE900900E454A6 /* Assets.xcassets */; };
 		409603AA2DCF0F6C00E454A6 /* ContentCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409603A92DCF0F6C00E454A6 /* ContentCreatorView.swift */; };
 		409603AC2DCF13FA00E454A6 /* BusinessOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409603AB2DCF13FA00E454A6 /* BusinessOwnerView.swift */; };
+		409603AE2DCF19FE00E454A6 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409603AD2DCF19FE00E454A6 /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4096039B2DCE900900E454A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409603A92DCF0F6C00E454A6 /* ContentCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCreatorView.swift; sourceTree = "<group>"; };
 		409603AB2DCF13FA00E454A6 /* BusinessOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessOwnerView.swift; sourceTree = "<group>"; };
+		409603AD2DCF19FE00E454A6 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				409603972DCE900500E454A6 /* Collaborate_AppApp.swift */,
 				409603992DCE900500E454A6 /* ContentView.swift */,
+				409603AD2DCF19FE00E454A6 /* SignUp.swift */,
 				409603A92DCF0F6C00E454A6 /* ContentCreatorView.swift */,
 				409603AB2DCF13FA00E454A6 /* BusinessOwnerView.swift */,
 				4096039B2DCE900900E454A6 /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 				4096039A2DCE900500E454A6 /* ContentView.swift in Sources */,
 				409603982DCE900500E454A6 /* Collaborate_AppApp.swift in Sources */,
 				409603AA2DCF0F6C00E454A6 /* ContentCreatorView.swift in Sources */,
+				409603AE2DCF19FE00E454A6 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
