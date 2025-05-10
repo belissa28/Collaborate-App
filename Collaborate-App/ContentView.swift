@@ -36,9 +36,7 @@ struct ContentView: View {
                 //.font(.headline)
                 .font(.system(size:25))
                 .foregroundColor(.white) // Optional: change text color for contrast
-                //.padding()
-            //Text("I am a...").foregroundColor(.white)
-                //NavigationView{
+              
                 VStack(spacing: 16) {
                 //NavigationLink(destination: ContentCreatorView()){
                 
