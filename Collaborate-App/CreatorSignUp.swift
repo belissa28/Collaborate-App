@@ -19,12 +19,12 @@ struct CreatorSignUp: View{
     var body: some View{
         
         //ZStack{
-            
+        NavigationView{
             VStack{
                 Text("Sign Up")
                         .font(.title)
                         .bold()
-                        .padding(.top, 40)
+                        .padding(.top, -40)
                     Text("Content Creator")
                     .bold()
                     Spacer() // pushes content to the top
@@ -81,6 +81,30 @@ struct CreatorSignUp: View{
                     Spacer()
                     
                 }
+                NavigationLink(destination: ContentCreatorView()){
+                    Text("Sign up")
+                        .font(.system(size: 14)) // smaller font
+                        .bold()
+                        .frame(width: 100, height: 30)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 0)
+//                                .stroke()
+//                        )
+                    
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 12)
+                        //.background(Color.white)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.purple, .blue]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                }
+                Spacer()
+                
                 
                 
 
@@ -88,7 +112,7 @@ struct CreatorSignUp: View{
             }
         //Spacer()
             
-        //}
+        }
     }
     
     
