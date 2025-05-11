@@ -13,7 +13,7 @@ struct SignUp: View {
     //@State private var businessowner: String = ""
     
     var body: some View {
-        NavigationView{
+        //NavigationView{
         ZStack {
             LinearGradient(
                             gradient: Gradient(colors: [.purple, .blue]),
@@ -29,7 +29,7 @@ struct SignUp: View {
                 .font(.system(size:60))
                 .foregroundColor(.white) // Optional: change text color for contrast
                 .bold()
-                .padding(.top, -90)
+                .padding(.top, 90)
             //Spacer().frame(height: 5)
             //Text("Log in")
                 
@@ -67,6 +67,7 @@ struct SignUp: View {
                           
             .padding(.horizontal, 30)
                 
+                
 //            HStack{
 //                Text("Don't have an account yet?").foregroundColor(.white)
 //                Text("Sign up").underline().foregroundColor(isTapped ? .gray : .white).onTapGesture{
@@ -75,10 +76,10 @@ struct SignUp: View {
 //                }
 //            }
 //            .padding()
-          
+          Spacer()
         }
             
-        }
+       // }
     }
 }
 

@@ -19,7 +19,7 @@ struct BusinessOwnerSignUp: View{
     var body: some View{
         
         //ZStack{
-        NavigationView{
+        //NavigationView{
             VStack{
                 Text("Sign Up")
                         .font(.title)
@@ -98,7 +98,8 @@ struct BusinessOwnerSignUp: View{
                 
 
             
-            }
+        //    }
+            //Spacer()
         //Spacer()
             
         }
