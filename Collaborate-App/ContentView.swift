@@ -38,9 +38,7 @@ struct ContentView: View {
                 .foregroundColor(.white) // Optional: change text color for contrast
               
                 VStack(spacing: 16) {
-                //NavigationLink(destination: ContentCreatorView()){
-                
-//                NavigationLink(destination: ContentCreatorView()) {
+          
                     TextField("Enter your name...", text: $userName)                    //Text("Content Creator")
                         .padding()
                         .frame(maxWidth: .infinity)
