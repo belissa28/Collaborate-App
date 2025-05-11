@@ -76,8 +76,7 @@ struct BusinessOwnerSignUp: View{
                         .font(.system(size: 14)) // smaller font
                         .bold()
                         .frame(width: 100, height: 30)
-//                        .overlay(
-//                    
+
                     
                         .padding(.vertical, 6)
                         .padding(.horizontal, 12)
