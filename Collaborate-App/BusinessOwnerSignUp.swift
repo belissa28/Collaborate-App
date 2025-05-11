@@ -74,10 +74,23 @@ struct BusinessOwnerSignUp: View{
                 NavigationLink(destination: BusinessOwnerView()){
                     Text("Sign up")
                         .font(.system(size: 14)) // smaller font
+                        .bold()
+                        .frame(width: 100, height: 30)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 0)
+//                                .stroke()
+//                        )
+                    
                         .padding(.vertical, 6)
                         .padding(.horizontal, 12)
-                        .background(Color.white)
-                        .foregroundColor(.black)
+                        //.background(Color.white)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.purple, .blue]),
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )                        .foregroundColor(.black)
                         .cornerRadius(10)
                 }
                 Spacer()

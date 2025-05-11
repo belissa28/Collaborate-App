@@ -29,7 +29,7 @@ struct SignUp: View {
                 .font(.system(size:60))
                 .foregroundColor(.white) // Optional: change text color for contrast
                 .bold()
-                .padding(.top, -80)
+                .padding(.top, -90)
             //Spacer().frame(height: 5)
             //Text("Log in")
                 
