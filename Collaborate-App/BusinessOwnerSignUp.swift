@@ -19,12 +19,12 @@ struct BusinessOwnerSignUp: View{
     var body: some View{
         
         //ZStack{
-            
+        NavigationView{
             VStack{
                 Text("Sign Up")
                         .font(.title)
                         .bold()
-                        .padding(.top, 40)
+                        .padding(.top, -40)//adding negative makes it go up
                     Text("Business Owner")
                     .bold()
                     Spacer() // pushes content to the top
@@ -71,16 +71,27 @@ struct BusinessOwnerSignUp: View{
                     
                     Spacer()
                 }
+                NavigationLink(destination: BusinessOwnerView()){
+                    Text("Sign up")
+                        .font(.system(size: 14)) // smaller font
+                        .padding(.vertical, 6)
+                        .padding(.horizontal, 12)
+                        .background(Color.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
+                }
+                Spacer()
                 
                 
 
-               
+            
             }
         //Spacer()
             
-        //}
+        }
+       
+    //}
     }
-    
     
     
     
